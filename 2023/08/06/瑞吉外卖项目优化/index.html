@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>瑞吉外卖项目优化 | 番茄的博客</title><meta name="author" content="Redtomato"><meta name="copyright" content="Redtomato"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="2023.8.6瑞吉外卖项目-优化篇介绍对瑞吉外卖项目进行优化，实现MySQL数据库读写分离，Nginx服务器部署前端项目，实现反向代理，Redis数据库对数据进行缓存，三台服务器的需要实现的功能分别为： 本地的Linux服务器A（MySQL数据库-写操作，Nginx服务器-部署前端项目，配置反向代理） 本地的Linux服务器B（MySQL数据库-读操作，Tomcat服务器-部署后端项目，安装好g">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>瑞吉外卖项目优化 | 番茄的博客</title><meta name="author" content="Redtomato"><meta name="copyright" content="Redtomato"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="2023.8.6瑞吉外卖项目-优化篇介绍对瑞吉外卖项目进行优化，实现MySQL数据库读写分离，Nginx服务器部署前端项目，实现反向代理，Redis数据库对数据进行缓存，三台服务器的需要实现的功能分别为： 本地的Linux服务器A（MySQL数据库-写操作，Nginx服务器-部署前端项目，配置反向代理） 本地的Linux服务器B（MySQL数据库-读操作，Tomcat服务器-部署后端项目，安装好g">
 <meta property="og:type" content="article">
 <meta property="og:title" content="瑞吉外卖项目优化">
 <meta property="og:url" content="https://indigob1ue.github.io/2023/08/06/%E7%91%9E%E5%90%89%E5%A4%96%E5%8D%96%E9%A1%B9%E7%9B%AE%E4%BC%98%E5%8C%96/index.html">
@@ -130,7 +130,7 @@
       win.activateLightMode = () => {
         document.documentElement.setAttribute('data-theme', 'light')
         if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
         }
       }
       const t = saveToLocal.get('theme')
